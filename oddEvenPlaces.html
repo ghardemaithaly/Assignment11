@@ -1,0 +1,71 @@
+<!--   
+    1. Write a JavaScript program to take an array as input from the user and calculate
+the sum of numbers in odd places and the sum of numbers at even places.
+a) Print the difference between the two sums
+b) Print the number of elements in odd places
+c) Print the number of elements in even places
+d) Print the average of all elements in the array
+e) Print GCD of Sum of Numbers at Odd Places and Sum of Numbers at Even
+Places
+Sample Input:
+[ 1, 2, 3, 4, 5 ]
+Explanation:
+Sum of Numbers at Odd Places = 1 + 3 + 5 = 9
+Sum of Numbers at Even Places = 2 + 4 = 6
+Difference = 9 - 6 = 3
+Sample Output:
+Difference = 3
+Odd Elements = 3
+Even Elements = 2
+Average = 3
+GCD = 3
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EvenOddWithPlaces</title>
+  </head>
+  <body>
+    <script>
+          function calculate(){
+          let SumEven=0;
+          let SumOdd=0;
+          let oddCount=0;
+          let evenCount=0;
+          let total;
+          var arrInput = [];
+          var size = 5;
+          for (var a = 0; a < size; a++) {
+
+            if (a % 2 == 0) {
+                SumEven = SumEven + arr[a];
+                eventCount ++;
+            }else{
+                SumOdd = SumOdd+ a[a];
+                oddCount++;
+            }
+
+            total = total+ a[i];
+        }
+
+        const difference = SumEven - SumOdd;
+        const average = total / arr.length;
+        const gcd = findGCD(SumOdd,SumEven);
+          document.write(arrInput <br>);
+          document.write(`Difference = ${difference} <br>`);
+
+      }
+
+          function findGCD(n,m) {
+              if(m===0) return n;
+              return findGCD(b,a%b);
+          }
+          calculate();
+           arrInput[a] = prompt("Enter array Element " + (a + 1));
+    </script>
+  </body>
+</html>
